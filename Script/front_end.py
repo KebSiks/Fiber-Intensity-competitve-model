@@ -53,7 +53,7 @@ if selection == "Home":
 )
                
         # Read GeoJSON file
-        gdf = gpd.read_file('../src/data/dun.simulated_uptake_rate.geojson')
+        gdf = gpd.read_file('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson')
 
         # Create map centered on GeoJSON data
         center_lat = gdf.centroid.y.mean()
@@ -75,7 +75,7 @@ if selection == "Home":
                 'weight': 0.01
             }
 
-        with open('../src/data/dun.simulated_uptake_rate.geojson') as f:
+        with open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson') as f:
             data_geojson = json.load(f)
 
         tooltip_fields = ['dun', 'population', 'fiber_tests',
@@ -92,7 +92,7 @@ if selection == "Home":
         )
 
         # Load the boundaries GeoJSON boundaries data
-        with open('../src/data/dun.simulated_uptake_rate.geojson') as f:
+        with open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson') as f:
             boundaries_geojson = json.load(f)
 
         boundaries_layer = folium.GeoJson(
@@ -146,7 +146,7 @@ if selection == "Home":
                 'weight': 0.5
             }
 
-        with open('../src/data/dun.simulated_uptake_rate.geojson') as f:
+        with open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson') as f:
             data_geojson = json.load(f)
 
         tooltip_fields = ['dun','simulated_uptake_rate']
@@ -162,7 +162,7 @@ if selection == "Home":
         )
 
         # Load the boundaries GeoJSON boundaries data
-        with open('../src/data/dun.simulated_uptake_rate.geojson') as f:
+        with open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson') as f:
             boundaries_geojson = json.load(f)
 
         boundaries_layer = folium.GeoJson(
@@ -209,7 +209,7 @@ if selection == "Home":
         unsafe_allow_html=True,
     )
             # Load the GeoDataFrame
-            gdf = gpd.read_file('../src/data/dun.simulated_uptake_rate.geojson')
+            gdf = gpd.read_file('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson')
             
             # Drop the 'geometry' column
             filtered_gdf = gdf.drop('geometry', axis=1)
@@ -275,7 +275,7 @@ if selection == "Home":
         unsafe_allow_html=True,
     )       
             # Load the GeoDataFrame
-            gdf = gpd.read_file('../src/data/dun.simulated_uptake_rate.geojson')
+            gdf = gpd.read_file('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/dun.simulated_uptake_rate.geojson')
             
             # Drop the 'geometry' column
             filtered_gdf = gdf.drop('geometry', axis=1)
@@ -347,7 +347,7 @@ elif selection == "About":
     unsafe_allow_html=True,
 )   
         # Open the JPEG image file        
-        image = Image.open('../src/data/member_pictures/Gracious.jpeg')
+        image = Image.open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/member_pictures/Gracious.jpeg')
 
         # Display the image in Streamlit
         
@@ -377,7 +377,7 @@ elif selection == "About":
         st.image(masked_image, caption='Gracious Ngetich | Data Engineer | Team Lead')
         
         # Open the JPEG image file
-        image = Image.open('../src/data/member_pictures/John.jpeg')
+        image = Image.open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/member_pictures/John.jpeg')
 
         # Display the image in Streamlit
         
@@ -407,7 +407,7 @@ elif selection == "About":
         st.image(masked_image, caption='John Chukwuebuka | Data Scientist')
         
         # Open the JPEG image file
-        image = Image.open('../src/data/member_pictures/Yusuf.jpeg')
+        image = Image.open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/member_pictures/Yusuf.jpeg')
 
         # Display the image in Streamlit
         
@@ -438,7 +438,7 @@ elif selection == "About":
         
                 
         # Open the JPEG image file
-        image = Image.open('../src/data/member_pictures/Tebogo.jpeg')
+        image = Image.open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/member_pictures/Tebogo.jpeg')
 
         # Display the image in Streamlit
         
@@ -468,7 +468,7 @@ elif selection == "About":
         st.image(masked_image, caption='Tebogo Mngoma | Data Scientist')
         
         # Open the JPEG image file
-        image = Image.open('../src/data/member_pictures/Kabelo.jpg')
+        image = Image.open('https://github.com/KebSiks/Fiber-Intensity-competitve-model/blob/main/src/data/member_pictures/Kabelo.jpg')
 
         # Display the image in Streamlit
         
